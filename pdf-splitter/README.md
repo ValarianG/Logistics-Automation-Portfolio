@@ -5,6 +5,7 @@
 **Primary Tech:** Python, PyPDF (OCR/text extraction workflow), Regex patterns  
 **Deliverable:** Windows executable (.exe) for non-technical users  
 **Business Impact:** ~15 hours/month saved
+
 **Note:** This app was created using company resources, I can post psuedo code but not the code itself and redacted screenshots of how it operates.
 
 ---
