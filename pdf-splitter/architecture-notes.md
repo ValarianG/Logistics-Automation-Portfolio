@@ -85,7 +85,6 @@ The app uses a **three-stage folder pipeline** to keep processing transparent an
   - **Invoice**
   - **BOL**
   - **AES**
-  - (Optional/future) **Unknown**
 
 **Why keyword-first?**
 - Robust to varied page ordering
@@ -151,12 +150,6 @@ Current behavior is designed to be operationally friendly:
 - UI status updates communicate progress (folder creation, upload complete, split complete)
 - Intermediate `Bundles` outputs provide a checkpoint for investigation
 
-Recommended enhancements (often discussed in interviews):
-- **Run summary log** (CSV/TXT): shipments detected, documents created, exceptions
-- **Unknown Pages** routing when classification fails
-- OCR confidence thresholds and flagging for manual review
-- Validation rules (e.g., required documents per shipment)
-
 ---
 
 ## 10) Security & Data Privacy
@@ -167,26 +160,10 @@ Because shipping/compliance documents can contain sensitive information:
 
 ---
 
-## 11) Suggested Repo Placement
-
-Place this file in:
-
-```
-/pdf-splitter/architecture-notes.md
-```
-
 Related assets:
 - `/pdf-splitter/README.md` – business problem, solution summary, impact
 - `/pdf-splitter/screenshots.pdf` – UI walkthrough (redacted)
 - `/pdf-splitter/flowchart.png` – process diagram
 
 ---
-
-## 12) Interview Talking Points (Quick)
-
-- Why you chose **keyword-first classification** (robust to ordering)
-- How regex provides **deterministic identifiers** for naming
-- Why `Bundles` improves traceability and reduces support burden
-- Why packaging as an `.exe` increases adoption
-- How you measured impact (**~15 hours/month saved**)
 
