@@ -8,6 +8,10 @@
 
 **Note:** This app was created using company resources, I can post psuedo code but not the code itself and redacted screenshots of how it operates.
 
+
+## Application Flow
+PDF_Splitter_Flowchart.png
+
 ---
 
 ## Overview
